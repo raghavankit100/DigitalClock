@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url(worldmappic.jpg);
+}
+
+
+.container {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(33, 32, 72, 0.5), rgba(0, 0, 12, 0.5));
+    border-radius: 50%;
+}
+
+.time-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(100%);
+    
+}
+
+.time-container span{
+    margin: 0 10px;
+    color: rgb(127, 242, 255);
+    font-size: 80px;
+    position: relative;
+}
+
+.time-container span::after{
+    
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+    position: absolute;
+    font-size: 32px;
+}
+
+#Hours::after{
+    content: 'HH';
+}
+
+#Min::after{
+    content: 'MM';
+}
+
+#Sec::after{
+    content: 'SS';
+}
